@@ -1,1 +1,2 @@
-console.log('test');
+const message = 'test dayo';
+console.log(message);
