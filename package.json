@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "sample.js",
   "scripts": {
+    "dev": "npx kintone-customize-uploader --base-url https://xw7kk8tbu48p.cybozu.com --username msunohara --password Shmn0047 ./dest/customize-manifest.json",
     "type": "npx kintone-dts-gen --base-url https://xw7kk8tbu48p.cybozu.com -u msunohara -p Shmn0047 --app-id 129 -o ./types/fields.d.ts"
   },
   "keywords": [],
