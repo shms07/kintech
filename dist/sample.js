@@ -1,7 +1,9 @@
 'use strict';
 (() => {
   kintone.events.on('app.record.detail.show', function (event) {
-    const message = event.record.会社名.value;
+    const record = event.record;
+    let message = record.TEL.value;
+    message = record.FAX.value;
     console.log(message);
   });
 })();

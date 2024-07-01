@@ -7,7 +7,8 @@ interface Event {
 (() => {
   kintone.events.on('app.record.detail.show', function (event: Event) {
     const record = event.record;
-    const message = record.TEL.value;
+    let message = record.TEL.value;
+    message = record.FAX.value;
     console.log(message);
   });
 })();
